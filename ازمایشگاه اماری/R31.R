@@ -1,0 +1,8 @@
+f=function(data){
+  n=length(data)
+  M=(sum(data))/n
+  v=(sum((data-M)^2))/(n-1)
+  s=v^(1/2)
+  return(s)
+}
+f(data=c(1:100))
