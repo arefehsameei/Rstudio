@@ -1,0 +1,25 @@
+---
+title: "taklif3"
+author: "عارفه سامعی"
+date: "2025-01-03"
+output: html_document
+---
+
+```{r }
+f= function(x){
+  y = 1:floor(x/2)
+  len_y = length(y)
+  z = rep(0 ,len_y)
+  for (i in y){
+    if (x %% i == 0){
+     z[i] = i
+     }
+  }
+  sum_z = sum(z)
+  return(sum_z == x)
+}
+f(6)
+
+
+```
+
